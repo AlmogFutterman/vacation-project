@@ -14,7 +14,7 @@ app.use(express.json())
 app.use("/users", require("./routes/users"))
 app.use("/data", require("./routes/data"))
 
-app.get('/', (req,res)=>res.sendFile(__dirname+"/build/index.html"))
+app.get('/*', (req,res)=>res.sendFile(__dirname+ "/build/index.html"))
 
 
 
